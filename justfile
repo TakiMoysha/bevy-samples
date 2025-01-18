@@ -1,9 +1,6 @@
-# run across all workspace memebers
-check:
-  cargo check --workspace
+test-lib-bsa *args="":
+  cargo test -p bsa {{args}}
 
-run-cars:
-  cargo run --bin cars
+run-lib-bsa-bin name="unpack":
+  cargo run -p bsa --bin {{name}}
 
-lib-tests:
-  cargo test --lib
