@@ -1,0 +1,6 @@
+[workspace]
+resolver = "2"
+members = ["libs/bsa", "libs/phys-engine", "samples/cars"]
+
+[workspace.dependencies]
+bsa = { path = "libs/bsa" }
